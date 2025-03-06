@@ -12,6 +12,11 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+@media only screen and (max-width: 500px) {
+    .main-box {
+        width: min-content;
+    }
+}
 .export{
     display: flex;
     justify-content: space-around;

@@ -1,14 +1,14 @@
-alert("welcome to your site");
+// alert("welcome to your site");
 
 
-function getElemnt(){
+function getElement(){
     //get elemnts from
     let unit=document.querySelector("#unit").value;
 
     let firstInput=document.querySelector("#f-input").value;
 
     let final=document.querySelector(".l-export");
-
+    
     
     const data = {
         number: firstInput,
@@ -24,16 +24,15 @@ function getElemnt(){
     .then(response => response.json()) // Parse the JSON response from the server
     .then(data => {
         console.log('Success:', data); // Handle the server response
+        console.log(final.innerHTML=data.success);
+        
     })
     .catch((error) => {
         console.error('Error:', error); // Handle any errors
     });
-
+    
+    
 }
+// let final=document.querySelector(".l-export");
 
-
-
-
-
-
-
+// console.log(final.innerHTML=);
